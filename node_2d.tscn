@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp41nfh8x5cj1"]
+
+[ext_resource type="PackedScene" uid="uid://d3qauveajni5r" path="res://larry.tscn" id="1_6ulmk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7voi"]
+size = Vector2(784, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tn0a"]
+size = Vector2(1171, 20)
+
+[node name="world" type="Node2D"]
+
+[node name="larry" parent="." instance=ExtResource("1_6ulmk")]
+position = Vector2(183, 148)
+
+[node name="plataforma" type="StaticBody2D" parent="."]
+scale = Vector2(0.812407, 0.882661)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma"]
+position = Vector2(380, 349)
+shape = SubResource("RectangleShape2D_p7voi")
+
+[node name="piso" type="StaticBody2D" parent="."]
+scale = Vector2(1.06168, -1.71987)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="piso"]
+position = Vector2(556.666, -357.586)
+scale = Vector2(1.03972, 2.35918)
+shape = SubResource("RectangleShape2D_4tn0a")

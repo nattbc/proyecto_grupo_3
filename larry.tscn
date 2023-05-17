@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3qauveajni5r"]
+
+[ext_resource type="Script" path="res://larry.gd" id="1_nax62"]
+[ext_resource type="Texture2D" uid="uid://kpmv7c13m4mb" path="res://icon.svg" id="2_srhr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ir788"]
+size = Vector2(67, 59)
+
+[node name="larry" type="CharacterBody2D"]
+script = ExtResource("1_nax62")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, -0.999995)
+scale = Vector2(0.539063, 0.46875)
+texture = ExtResource("2_srhr8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -2.5)
+shape = SubResource("RectangleShape2D_ir788")
