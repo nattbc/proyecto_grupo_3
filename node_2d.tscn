@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bp41nfh8x5cj1"]
+[gd_scene load_steps=5 format=3 uid="uid://bp41nfh8x5cj1"]
 
 [ext_resource type="PackedScene" uid="uid://d3qauveajni5r" path="res://larry.tscn" id="1_6ulmk"]
+[ext_resource type="Texture2D" uid="uid://oxcb630ifm77" path="res://plataforma larga.png" id="2_kgl1r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p7voi"]
 size = Vector2(784, 28)
@@ -21,9 +22,16 @@ position = Vector2(380, 349)
 shape = SubResource("RectangleShape2D_p7voi")
 
 [node name="piso" type="StaticBody2D" parent="."]
+position = Vector2(-10, -14)
 scale = Vector2(1.06168, -1.71987)
 
+[node name="Sprite2D" type="Sprite2D" parent="piso"]
+position = Vector2(551.356, -364.175)
+rotation = -3.14159
+scale = Vector2(1.08565, 0.515114)
+texture = ExtResource("2_kgl1r")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="piso"]
-position = Vector2(556.666, -357.586)
+position = Vector2(568.91, -356.422)
 scale = Vector2(1.03972, 2.35918)
 shape = SubResource("RectangleShape2D_4tn0a")
