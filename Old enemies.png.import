@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oxcb630ifm77"
-path="res://.godot/imported/plataforma larga.png-f551d7ca5273e1ba8d0accff928ffe34.ctex"
+uid="uid://c7ej7nfgrmh8x"
+path="res://.godot/imported/Old enemies.png-fe3b3b942ce1cc36602a2a133d3504a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://plataforma larga.png"
-dest_files=["res://.godot/imported/plataforma larga.png-f551d7ca5273e1ba8d0accff928ffe34.ctex"]
+source_file="res://Old enemies.png"
+dest_files=["res://.godot/imported/Old enemies.png-fe3b3b942ce1cc36602a2a133d3504a8.ctex"]
 
 [params]
 
