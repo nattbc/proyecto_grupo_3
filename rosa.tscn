@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://k1523v515t3v"]
+
+[ext_resource type="Texture2D" uid="uid://bvso531rq7r5c" path="res://ROSA WIKIPEDIAAAA.png" id="1_ibcgp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obs1k"]
+size = Vector2(100, 54)
+
+[node name="rosa" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -3.8147e-06)
+scale = Vector2(0.315873, 0.3)
+texture = ExtResource("1_ibcgp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_obs1k")
