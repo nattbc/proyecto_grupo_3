@@ -22,10 +22,19 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
 	
+	move_and_slide()
+	#set_collision_mask_value(2, false)
 	#########
 	
 
+#no anda mal, falta la lògica para que ande :]
+
+func pass_through():
+	if is_on_floor():
+		set_collision_mask_value(2, false)
+
+func cancel_fall_through():
+	if get_collision_mask_value(2) == false:
+		set_collision_mask_value(2, true)
 
