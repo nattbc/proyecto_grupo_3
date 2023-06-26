@@ -30,11 +30,11 @@ func _physics_process(delta):
 
 #no anda mal, falta la lògica para que ande :]
 
-func pass_through():
-	if is_on_floor():
-		set_collision_mask_value(2, false)
+#lo cambiè y lo puse en el script del rosa ;-;
 
-func cancel_fall_through():
-	if get_collision_mask_value(2) == false:
-		set_collision_mask_value(2, true)
 
+
+
+
+
+	

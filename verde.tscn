@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://desag3lvwt7pc"]
+
+[ext_resource type="Texture2D" uid="uid://s1amun6r0lg1" path="res://VERDE.jpg" id="1_3n2su"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11h04"]
+size = Vector2(204, 202)
+
+[node name="verde" type="StaticBody2D"]
+
+[node name="Verde" type="Sprite2D" parent="."]
+position = Vector2(0.5, 0.500004)
+scale = Vector2(0.379817, 0.376147)
+texture = ExtResource("1_3n2su")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_11h04")
