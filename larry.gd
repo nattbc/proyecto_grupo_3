@@ -31,7 +31,22 @@ func _physics_process(delta):
 #no anda mal, falta la lògica para que ande :]
 
 #lo cambiè y lo puse en el script del rosa ;-;
+	
+	pass_through_rosa()
+	pass_through_verde()
 
+
+func pass_through_rosa():
+	if Input.is_action_pressed("press_1"):
+		#desaparece rosa
+		set_collision_mask_value(2, false)#pasa x el rosa
+		set_collision_mask_value(3, true)#no pasa por el verde
+
+func pass_through_verde():
+	if Input.is_action_pressed("press_2"):
+		#desaparece verde
+		set_collision_mask_value(3, false)#pasa x el verde
+		set_collision_mask_value(2, true)#no pasa por el rosa
 
 
 
