@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bah5huewkrtpm"]
+
+[ext_resource type="Texture2D" uid="uid://s1amun6r0lg1" path="res://VERDE.jpg" id="1_xrvpj"]
+
+[node name="fondo verde" type="StaticBody2D"]
+
+[node name="Verde" type="Sprite2D" parent="."]
+position = Vector2(833.25, 422.75)
+scale = Vector2(3.88165, 2.55138)
+texture = ExtResource("1_xrvpj")

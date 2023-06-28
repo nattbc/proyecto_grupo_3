@@ -41,15 +41,10 @@ func pass_through_rosa():
 		#desaparece rosa
 		set_collision_mask_value(2, false)#pasa x el rosa
 		set_collision_mask_value(3, true)#no pasa por el verde
+		#set_visibility_layer_bit()
 
 func pass_through_verde():
 	if Input.is_action_pressed("press_2"):
 		#desaparece verde
 		set_collision_mask_value(3, false)#pasa x el verde
 		set_collision_mask_value(2, true)#no pasa por el rosa
-
-
-
-
-
-	
