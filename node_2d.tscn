@@ -162,13 +162,12 @@ sources/0 = SubResource("TileSetAtlasSource_564cq")
 
 [node name="world" type="Node2D"]
 
-[node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
-visible = false
-
 [node name="fondo verde" parent="." instance=ExtResource("2_mmyjg")]
-visible = false
 visibility_layer = 4
 position = Vector2(-181, -53)
+
+[node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
+visible = false
 
 [node name="larry" parent="." instance=ExtResource("1_6ulmk")]
 position = Vector2(183, 148)

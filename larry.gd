@@ -24,27 +24,23 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 	move_and_slide()
-	#set_collision_mask_value(2, false)
+	
 	#########
 	
-
-#no anda mal, falta la lògica para que ande :]
-
-#lo cambiè y lo puse en el script del rosa ;-;
+	pass_through()
 	
-	pass_through_rosa()
-	pass_through_verde()
 
+func pass_through():
+	if Input.is_action_pressed("press_1"): #desaparece rosa
+		set_collision_masks(2, [3,4])
+		
+	if Input.is_action_pressed("press_2"): #desaparece verde
+		set_collision_masks(3, [2,4])
+	
+	if Input.is_action_pressed("press_3"): #desaparece azul
+		set_collision_masks(4, [2,3])
 
-func pass_through_rosa():
-	if Input.is_action_pressed("press_1"):
-		#desaparece rosa
-		set_collision_mask_value(2, false)#pasa x el rosa
-		set_collision_mask_value(3, true)#no pasa por el verde
-		#set_visibility_layer_bit()
-
-func pass_through_verde():
-	if Input.is_action_pressed("press_2"):
-		#desaparece verde
-		set_collision_mask_value(3, false)#pasa x el verde
-		set_collision_mask_value(2, true)#no pasa por el rosa
+func set_collision_masks(pass_mask, not_pass_masks):
+	set_collision_mask_value(pass_mask, false)
+	for not_pass_mask in not_pass_masks:
+		set_collision_mask_value(not_pass_mask, true)
