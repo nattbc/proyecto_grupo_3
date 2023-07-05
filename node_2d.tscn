@@ -1,13 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://bp41nfh8x5cj1"]
+[gd_scene load_steps=13 format=3 uid="uid://bp41nfh8x5cj1"]
 
 [ext_resource type="PackedScene" uid="uid://d3qauveajni5r" path="res://larry.tscn" id="1_6ulmk"]
 [ext_resource type="Texture2D" uid="uid://bbqh60e0apb0a" path="res://platformertiles.png" id="2_1sqn8"]
 [ext_resource type="PackedScene" uid="uid://bah5huewkrtpm" path="res://fondo verde.tscn" id="2_mmyjg"]
+[ext_resource type="PackedScene" uid="uid://kcdiu8cyy4pt" path="res://fondo_celeste.tscn" id="3_6cdhk"]
 [ext_resource type="PackedScene" uid="uid://k1523v515t3v" path="res://rosa.tscn" id="3_ykr7s"]
 [ext_resource type="Script" path="res://rosa.gd" id="4_2da3m"]
 [ext_resource type="PackedScene" uid="uid://desag3lvwt7pc" path="res://verde.tscn" id="5_u4lds"]
 [ext_resource type="Script" path="res://verde.gd" id="6_rft67"]
 [ext_resource type="PackedScene" uid="uid://cq3px3o31q0lc" path="res://fondo rosa.tscn" id="7_32mw1"]
+[ext_resource type="PackedScene" uid="uid://b7bp4vog26hgx" path="res://celeste.tscn" id="9_ggrkb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_564cq"]
 texture = ExtResource("2_1sqn8")
@@ -163,11 +165,14 @@ sources/0 = SubResource("TileSetAtlasSource_564cq")
 [node name="world" type="Node2D"]
 
 [node name="fondo verde" parent="." instance=ExtResource("2_mmyjg")]
+visible = false
 visibility_layer = 4
 position = Vector2(-181, -53)
 
 [node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
 visible = false
+
+[node name="fondo celeste" parent="." instance=ExtResource("3_6cdhk")]
 
 [node name="larry" parent="." instance=ExtResource("1_6ulmk")]
 position = Vector2(183, 148)
@@ -197,3 +202,8 @@ position = Vector2(374, 415)
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("6_rft67")
+
+[node name="celeste" parent="." instance=ExtResource("9_ggrkb")]
+position = Vector2(563, 210)
+collision_layer = 8
+collision_mask = 0

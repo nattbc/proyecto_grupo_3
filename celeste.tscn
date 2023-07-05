@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7bp4vog26hgx"]
+
+[ext_resource type="Texture2D" uid="uid://dpnm6bjawj6b" path="res://celeste.png" id="1_aa2j3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7eq8"]
+size = Vector2(68, 47.5)
+
+[node name="celeste" type="StaticBody2D"]
+
+[node name="Celeste" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, 0)
+scale = Vector2(0.226667, 0.285714)
+texture = ExtResource("1_aa2j3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_r7eq8")

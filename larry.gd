@@ -25,8 +25,6 @@ func _physics_process(delta):
 	
 	move_and_slide()
 	
-	#########
-	
 	pass_through()
 	
 
@@ -44,3 +42,4 @@ func set_collision_masks(pass_mask, not_pass_masks):
 	set_collision_mask_value(pass_mask, false)
 	for not_pass_mask in not_pass_masks:
 		set_collision_mask_value(not_pass_mask, true)
+
