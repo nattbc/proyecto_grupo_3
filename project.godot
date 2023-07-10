@@ -62,6 +62,10 @@ press_3={
 
 [layer_names]
 
+2d_render/layer_2="rosa"
+2d_render/layer_3="verde"
+2d_render/layer_4="celeste"
 2d_physics/layer_1="larry+titlemap"
 2d_physics/layer_2="rosa"
 2d_physics/layer_3="verde"
+2d_physics/layer_4="celeste"
