@@ -28,6 +28,10 @@ func _physics_process(delta):
 	pass_through()
 	
 
+#var fondo_celeste 
+#var fondo_verde 
+#var fondo_rosa 
+
 func pass_through():
 	if Input.is_action_pressed("press_1"): #desaparece rosa
 		set_collision_masks(2, [3,4])
@@ -40,18 +44,21 @@ func pass_through():
 	if Input.is_action_pressed("press_3"): #desaparece azul
 		set_collision_masks(4, [2,3])
 		#set_visibility_layers(4, [2,3]) # aparece fondo azul
-		#$fondo_celeste.visible= true
+		
 		#$fondo_verde.visible= false
 		#$fondo_rosa.visible= false
+		#$fondo_celeste.visible= true
+	
+	
 	
 func set_collision_masks(pass_mask, not_pass_masks):
 	set_collision_mask_value(pass_mask, false)
 	for not_pass_mask in not_pass_masks:
 		set_collision_mask_value(not_pass_mask, true)
 	
-#func set_visibility_layers(show_layer, not_show_layers):
-	#set_visibility_layer_bit(show_layer, true)
-	#for not_show_layer in not_show_layers:
-		#set_visibility_layer_bit(not_show_layer, false)
+func set_visibility_layers(show_layer, not_show_layers):
+	set_visibility_layer_bit(show_layer, true)
+	for not_show_layer in not_show_layers:
+		set_visibility_layer_bit(not_show_layer, false)
 
 

@@ -164,19 +164,19 @@ sources/0 = SubResource("TileSetAtlasSource_564cq")
 
 [node name="world" type="Node2D"]
 
+[node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
+visibility_layer = 2
+collision_layer = 0
+collision_mask = 0
+
 [node name="fondo verde" parent="." instance=ExtResource("2_mmyjg")]
 visibility_layer = 4
 position = Vector2(-181, -53)
 collision_layer = 0
 collision_mask = 0
 
-[node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
-visibility_layer = 2
-collision_layer = 0
-collision_mask = 0
-
 [node name="fondo celeste" parent="." instance=ExtResource("3_6cdhk")]
-visibility_layer = 0
+visibility_layer = 8
 collision_layer = 0
 collision_mask = 0
 
