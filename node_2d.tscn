@@ -164,18 +164,21 @@ sources/0 = SubResource("TileSetAtlasSource_564cq")
 
 [node name="world" type="Node2D"]
 
-[node name="fondo rosa" parent="." instance=ExtResource("7_32mw1")]
+[node name="fondo_rosa" parent="." instance=ExtResource("7_32mw1")]
+visible = false
 visibility_layer = 2
 collision_layer = 0
 collision_mask = 0
 
-[node name="fondo verde" parent="." instance=ExtResource("2_mmyjg")]
+[node name="fondo_verde" parent="." instance=ExtResource("2_mmyjg")]
+visible = false
 visibility_layer = 4
 position = Vector2(-181, -53)
 collision_layer = 0
 collision_mask = 0
 
-[node name="fondo celeste" parent="." instance=ExtResource("3_6cdhk")]
+[node name="fondo_azul" parent="." instance=ExtResource("3_6cdhk")]
+visible = false
 visibility_layer = 8
 collision_layer = 0
 collision_mask = 0
@@ -192,7 +195,7 @@ collision_layer = 4
 collision_mask = 0
 script = ExtResource("6_rft67")
 
-[node name="celeste" parent="." instance=ExtResource("9_ggrkb")]
+[node name="azul" parent="." instance=ExtResource("9_ggrkb")]
 position = Vector2(563, 210)
 collision_layer = 8
 collision_mask = 0
