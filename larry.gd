@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -500.0
+const JUMP_VELOCITY = -370.0
 
 @onready var fondo_verde:CanvasItem = $"../fondo_verde"
 @onready var fondo_rosa:CanvasItem = $"../fondo_rosa"
