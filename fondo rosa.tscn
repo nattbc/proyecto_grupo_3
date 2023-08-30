@@ -7,6 +7,6 @@
 script = ExtResource("1_t2mho")
 
 [node name="RosaWikipediaaaa" type="Sprite2D" parent="."]
-position = Vector2(660.5, 363.5)
-scale = Vector2(7.29206, 7.65)
+position = Vector2(831.5, 213.5)
+scale = Vector2(8.37778, 9.31667)
 texture = ExtResource("1_jajtn")

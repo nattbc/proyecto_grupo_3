@@ -5,6 +5,6 @@
 [node name="fondo verde" type="StaticBody2D"]
 
 [node name="Verde" type="Sprite2D" parent="."]
-position = Vector2(833.25, 422.75)
-scale = Vector2(3.88165, 2.55138)
+position = Vector2(1092.25, 239.5)
+scale = Vector2(4.83211, 3.22386)
 texture = ExtResource("1_xrvpj")
