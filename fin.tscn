@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn7dl1085nlv"]
+
+[ext_resource type="Texture2D" uid="uid://df7k8qkmu7nip" path="res://estrella_fin.png" id="1_4ul0e"]
+
+[node name="fin" type="StaticBody2D"]
+
+[node name="EstrellaFin" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, -1)
+scale = Vector2(0.139, 0.134)
+texture = ExtResource("1_4ul0e")
