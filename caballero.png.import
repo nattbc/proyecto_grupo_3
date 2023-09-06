@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7ej7nfgrmh8x"
-path="res://.godot/imported/Old enemies.png-fe3b3b942ce1cc36602a2a133d3504a8.ctex"
+uid="uid://cqe32bm30ht0d"
+path="res://.godot/imported/caballero.png-298a3dccc10e22c352a38116ca448caf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Old enemies.png"
-dest_files=["res://.godot/imported/Old enemies.png-fe3b3b942ce1cc36602a2a133d3504a8.ctex"]
+source_file="res://caballero.png"
+dest_files=["res://.godot/imported/caballero.png-298a3dccc10e22c352a38116ca448caf.ctex"]
 
 [params]
 
