@@ -258,14 +258,14 @@ script = ExtResource("6_rft67")
 
 [node name="verde2" parent="." instance=ExtResource("5_u4lds")]
 position = Vector2(1200, 546)
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.305727, 0.376425)
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("6_rft67")
 
 [node name="verde2" parent="verde2" instance=ExtResource("5_u4lds")]
 position = Vector2(-2196.67, -1120)
-scale = Vector2(0.3, 1)
+scale = Vector2(-0.28009, 0.81965)
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("6_rft67")
@@ -293,9 +293,15 @@ scale = Vector2(0.764, 1.05)
 collision_layer = 8
 collision_mask = 0
 
+[node name="EstrellaAmarilla" type="Sprite2D" parent="."]
+position = Vector2(1016.5, -39.5)
+scale = Vector2(0.0307996, 0.0295007)
+texture = ExtResource("12_1vrf8")
+
 [node name="larry" parent="." instance=ExtResource("1_6ulmk")]
 position = Vector2(10, 527)
 collision_mask = 7
+metadata/_edit_group_ = true
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="larry"]
 remote_path = NodePath("../../Camera2D")
@@ -322,8 +328,3 @@ offset_bottom = -127.0
 position = Vector2(74.4375, 23)
 scale = Vector2(0.476438, 0.438679)
 texture = ExtResource("10_cbf0r")
-
-[node name="EstrellaAmarilla" type="Sprite2D" parent="."]
-position = Vector2(1016.5, -39.5)
-scale = Vector2(0.0343333, 0.0323333)
-texture = ExtResource("12_1vrf8")
