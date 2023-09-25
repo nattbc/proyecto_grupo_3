@@ -6,6 +6,8 @@ const JUMP_VELOCITY = -370.0
 @onready var fondo_verde:CanvasItem = $"../fondo_verde"
 @onready var fondo_rosa:CanvasItem = $"../fondo_rosa"
 @onready var fondo_azul:CanvasItem = $"../fondo_azul"
+@onready var ap = $AnimationPlayer
+@onready var sprite = $Sprite2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -26,11 +28,25 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+	if direction != 0:
+		sprite.flip_h = (direction == -1)
+	
+	update_animations(direction)
 	
 	move_and_slide()
 	
 	pass_through()
 	
+
+func update_animations(direction):
+	if is_on_floor():
+		if direction == 0:
+			ap.play("quieta_der")
+		else:
+			ap.play("corre_der")
+			
+
 func pass_through():
 	if Input.is_action_pressed("press_1"): #desaparece rosa
 		set_collision_masks(2, [3,4])
@@ -57,3 +73,10 @@ func set_collision_masks(pass_mask, not_pass_masks):
 	for not_pass_mask in not_pass_masks:
 		set_collision_mask_value(not_pass_mask, true)
 	
+
+
+
+
+
+
+
