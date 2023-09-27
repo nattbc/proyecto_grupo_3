@@ -83,5 +83,5 @@ func set_collision_masks(pass_mask, not_pass_masks):
 
 
 func _on_area_2d_body_entered(body):
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://node_2d.tscn")
 	#linea de giani
