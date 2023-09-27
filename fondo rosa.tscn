@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://cq3px3o31q0lc"]
 
-[ext_resource type="Texture2D" uid="uid://bvso531rq7r5c" path="res://ROSA WIKIPEDIAAAA.png" id="1_jajtn"]
 [ext_resource type="Script" path="res://fondo_rosa.gd" id="1_t2mho"]
+[ext_resource type="Texture2D" uid="uid://dono8vtr5o3sr" path="res://rosa_nuevo.png" id="2_rtav2"]
 
 [node name="fondo rosa" type="StaticBody2D"]
 script = ExtResource("1_t2mho")
 
 [node name="RosaWikipediaaaa" type="Sprite2D" parent="."]
-position = Vector2(831.5, 213.5)
-scale = Vector2(8.37778, 9.31667)
-texture = ExtResource("1_jajtn")
+position = Vector2(831.5, 448.5)
+scale = Vector2(8.37778, 6.9125)
+texture = ExtResource("2_rtav2")

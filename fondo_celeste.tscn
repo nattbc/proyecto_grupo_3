@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://kcdiu8cyy4pt"]
 
-[ext_resource type="Texture2D" uid="uid://dpnm6bjawj6b" path="res://celeste.png" id="1_g4l76"]
+[ext_resource type="Texture2D" uid="uid://cgo62mdwa5blr" path="res://azul_nuevo.png" id="1_evuby"]
 
 [node name="fondo celeste" type="StaticBody2D"]
 
 [node name="Celeste" type="Sprite2D" parent="."]
-position = Vector2(791.875, 51.9999)
-scale = Vector2(8.3075, 10.5357)
-texture = ExtResource("1_g4l76")
+position = Vector2(894, 153.465)
+scale = Vector2(8.3075, 6.72268)
+texture = ExtResource("1_evuby")
