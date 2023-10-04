@@ -83,5 +83,10 @@ func set_collision_masks(pass_mask, not_pass_masks):
 
 
 func _on_area_2d_body_entered(body):
-	get_tree().change_scene_to_file("res://node_2d.tscn")
-	#linea de giani
+	get_tree().change_scene_to_file("res://mensaje.tscn")
+
+func _on_msj_body_entered(body):
+	get_tree().change_scene_to_file("res://mensaje_2.tscn")
+	
+	#mensaje cuando toca estrella "pasaste el nivel :D"
+	#y el boton de next
