@@ -1,9 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://d3qauveajni5r"]
+[gd_scene load_steps=15 format=3 uid="uid://d3qauveajni5r"]
 
 [ext_resource type="Script" path="res://larry.gd" id="1_nax62"]
 [ext_resource type="Texture2D" uid="uid://dn2i1vd7xug1d" path="res://grat/quieta_der.png" id="2_bv5df"]
 [ext_resource type="Texture2D" uid="uid://cie4i7ahrweux" path="res://grat/corre_der.png" id="3_h2jv8"]
 [ext_resource type="Texture2D" uid="uid://pk1g7qws13uk" path="res://grat/salta_der.png" id="4_51ep8"]
+[ext_resource type="AudioStream" uid="uid://bhh1nfuivwd5o" path="res://sonido/steps.mp3" id="5_tvckf"]
+[ext_resource type="AudioStream" uid="uid://cpva6ox3vs6wa" path="res://sonido/music.mp3" id="6_0rq3t"]
+[ext_resource type="AudioStream" uid="uid://cx8ilvpykwfpc" path="res://sonido/whoosh2.0.mp3" id="7_ecihi"]
+[ext_resource type="AudioStream" uid="uid://bmq6di4amkajq" path="res://sonido/jump2.0.mp3" id="8_va0gc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ir788"]
 size = Vector2(47, 28)
@@ -242,3 +246,19 @@ autoplay = "quieta_der"
 libraries = {
 "": SubResource("AnimationLibrary_23pc6")
 }
+
+[node name="steps" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_tvckf")
+volume_db = -8.0
+pitch_scale = 1.93
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_0rq3t")
+volume_db = -37.339
+autoplay = true
+
+[node name="whoosh" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ecihi")
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_va0gc")

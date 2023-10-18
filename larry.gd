@@ -8,6 +8,10 @@ const JUMP_VELOCITY = -370.0
 @onready var fondo_azul:CanvasItem = $"../fondo_azul"
 @onready var ap = $AnimationPlayer
 @onready var sprite = $Sprite2D
+@onready var steps = $steps
+@onready var music = $music
+@onready var whoosh = $whoosh
+@onready var jump = $jump
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -20,14 +24,19 @@ func _physics_process(delta):
 	# Handle Jump.
 	if Input.is_action_just_pressed("move_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-
+		jump.play()
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("move_left", "move_right")
 	if direction:
 		velocity.x = direction * SPEED
+		
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	
+	if direction and is_on_floor():
+		steps.play()
 		
 	if direction != 0:
 		sprite.flip_h = (direction == -1)
@@ -70,6 +79,7 @@ func pass_through():
 	
 func set_collision_masks(pass_mask, not_pass_masks):
 	set_collision_mask_value(pass_mask, false)
+	whoosh.play()
 	for not_pass_mask in not_pass_masks:
 		set_collision_mask_value(not_pass_mask, true)
 	
