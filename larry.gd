@@ -35,8 +35,11 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
-	if direction and is_on_floor():
-		steps.play()
+	if velocity.x != 0 and is_on_floor():
+		if !steps.playing:
+			steps.play()
+	elif steps.playing:
+		steps.stop()
 		
 	if direction != 0:
 		sprite.flip_h = (direction == -1)
