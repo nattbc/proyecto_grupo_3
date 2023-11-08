@@ -100,6 +100,6 @@ func _on_area_2d_body_entered(body):
 
 func _on_msj_body_entered(body):
 	get_tree().change_scene_to_file("res://mensaje_2.tscn")
-	
-	#mensaje cuando toca estrella "pasaste el nivel :D"
-	#y el boton de next
+
+func _on_msj_fin_body_entered(body):
+	get_tree().change_scene_to_file("res://mensaje_fin.tscn")

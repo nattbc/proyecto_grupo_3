@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bibpb0l0yovgr"]
+
+[ext_resource type="Texture2D" uid="uid://ccqsqk1nyfbq4" path="res://You-snailed-it-103046856.jpg" id="1_4w580"]
+[ext_resource type="Script" path="res://mensaje_fin.gd" id="1_6thhm"]
+
+[node name="mensaje_fin" type="Node2D"]
+script = ExtResource("1_6thhm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 419.0
+offset_top = 206.0
+offset_right = 738.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 33
+text = "Pasaste el Nivel 2 :D"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 418.0
+offset_top = 276.0
+offset_right = 739.0
+offset_bottom = 310.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="volver" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "volver al tutorial"
+
+[node name="You-snailed-it-103046856" type="Sprite2D" parent="."]
+position = Vector2(581, 436)
+scale = Vector2(0.314286, 0.300357)
+texture = ExtResource("1_4w580")
+
+[connection signal="pressed" from="VBoxContainer/volver" to="." method="_on_volver_pressed"]
